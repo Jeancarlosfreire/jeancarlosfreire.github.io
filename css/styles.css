@@ -66,9 +66,7 @@
   image-rendering: -webkit-optimize-contrast;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-}
+  }
 
 #social-container {
   display: flex;
@@ -267,7 +265,6 @@
   }
 
   #bio-container {
-    min-height: auto;
     border-right: none;
     border-bottom: 5px solid var(--bio-border-color);
   }
