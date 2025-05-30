@@ -64,7 +64,6 @@
   object-fit: cover;
   object-position: center;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0);
