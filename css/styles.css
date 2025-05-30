@@ -8,7 +8,7 @@
 /* Variaveis */
 :root {
   --main-color: #54B689;
-  --main-text-color: #FFF;
+  --main-text-color: #ffffff;
   --border-color: #999;
   --bio-bg-color: #1E2A3A;
   --bio-border-color: #293544;
@@ -167,9 +167,9 @@
 
 .skills-box {
   flex: 1 1 33%;
-  max-width: 33%;
+  max-width: 25%;
   margin-bottom: 35px;
-}
+  }
 
 .skills-title {
   font-size: 24px;
@@ -180,8 +180,27 @@
 }
 
 .skills-box i {
-  font-size: 45px;
+  font-size: 35px;
   margin-right: 10px;
+}
+
+/* Copyright */
+#copyright {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 50px;
+  font-size: 14px;
+  color: var(--main-text-color);
+}
+
+#copyright a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+#copyright a:hover {
+  text-decoration: underline;
 }
 
 /* Mobile */
