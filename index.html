@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Jean Carlos Freire dos Santos - Desenvolvedor Front-End">
   <title>Portfólio Jean Carlos Freire dos Santos</title>
    <!-- Dev Icon Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
@@ -12,14 +13,14 @@
   <main id="container">
     <aside id="bio-container">
       <h2>Jean Carlos Freire dos Santos</h2>
-      <img id="bio-image" src="img/foto_jean.jpg" alt="jean">
+      <img id="bio-image" src="img/foto_jean.jpg" alt="jean" loading="eager" fetchpriority="high">
       <p>Olá, meu nome é Jean Carlos e sou <span class="highlight">Desenvolvedor Front-End</span>.</p>
       <p id="welcome-text">Seja bem-vindo!</p>
       <ul id="social-container">
           <li><a href="https://linkedin.com/in/jeancarlosfreire" target="_blank" rel="noopener"><ion-icon name="logo-linkedin"></ion-icon></a></li>
       </ul>
       <div id="email-container">
-        <ion-icon name="mail-outline"></ion-icon><a href="#">cjeancarlos9@gmail.com</a>
+        <ion-icon name="mail-outline"></ion-icon><a href="mailto:cjeancarlos9@gmail.com">cjeancarlos9@gmail.com</a>
       </div>
     </aside>
     <section id="about-container">
@@ -33,9 +34,16 @@
       <div id="skills-container">
         <div class="skills-box">
           <p class="skills-title">Front-end</p>
-          <i class="devicon-html5-plain colored">HTML 5</i>
-          <i class="devicon-css3-plain colored">CSS 3</i>
-          <i class="devicon-javascript-plain colored">JavaScript</i>
+          <i class="devicon-html5-plain colored" title="HTML 5"></i>
+          <i class="devicon-css3-plain colored" title="CSS 3"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Cursos</p>
+          <div class="skill-item">
+            <img src="img/excel-icon.svg" alt="Excel" class="excel-icon">
+            <span class="excel-text">Excel Avançado</span>
+          </div>
         </div>
       </div>
     </section>

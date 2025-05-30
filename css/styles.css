@@ -57,10 +57,18 @@
 }
 
 #bio-image {
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 25px;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 #social-container {
@@ -118,6 +126,7 @@
 }
 
 .description {
+  text-align: justify;
   max-width: 75%;
   margin-bottom: 10px;
 }
@@ -169,7 +178,12 @@
   flex: 1 1 33%;
   max-width: 25%;
   margin-bottom: 35px;
-  }
+  margin-right: 50px;
+}
+
+.skills-box:last-child {
+  margin-right: 0;
+}
 
 .skills-title {
   font-size: 24px;
@@ -177,11 +191,55 @@
   font-weight: bold;
   padding-left: 10px;
   border-left: 5px solid var(--main-color);
+  color: var(--main-text-color);
 }
 
 .skills-box i {
   font-size: 35px;
   margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.skills-box i::after {
+  content: attr(title);
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 10px;
+  font-style: normal;
+  vertical-align: middle;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+
+.excel-icon {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+.excel-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 /* Copyright */
@@ -205,7 +263,6 @@
 
 /* Mobile */
 @media(max-width: 450px) {
-
   #container {
     flex-direction: column;
   }
@@ -251,4 +308,8 @@
     font-size: 60px;
   }
 
+  #copyright {
+    margin-top: 30px;
+    padding: 15px;
+  }
 }
